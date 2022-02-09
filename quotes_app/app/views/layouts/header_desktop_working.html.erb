@@ -1,0 +1,25 @@
+<header class="header navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <%= link_to "For the Love of Quote", root_path, id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav" id="head-nav-id">
+        <li><%= active_link_to "Home",   root_path, active: :exclusive %></li>
+        <li><%= active_link_to "Gallery", gallery_path %></li>
+        <li><%= active_link_to "About",   about_path %></li>
+        <li><%= active_link_to "Contact", contact_path %></li>
+      </ul>
+      <%= active_link_to fa_icon('bars', type: :solid), "javascript:void(0);", class_active: 'mobile-menu-icon', class_inactive: 'mobile-menu-icon', onclick: "myFunction()" %> 
+    </nav>
+  </div>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("head-nav-id");
+    if (x.className === "") {
+      x.className += " responsive";
+    } else {
+      x.className = "nav navbar-nav";
+    }
+  }
+</script>
+</header>

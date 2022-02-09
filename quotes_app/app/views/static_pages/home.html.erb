@@ -1,0 +1,42 @@
+
+<div class="center home-content">
+	<% find_images.each do |img|%>
+		<%= image_tag(img, alt: "quote", class: 'mySlides') %>
+	<% end %>
+    
+</div>
+
+<button class="quotes_button prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></button>
+<button class="quotes_button next" onclick="plusSlides(+1)"><i class="fas fa-chevron-right"></i></button>
+
+<script>
+	var slideIndex = 0;
+	var t;
+	carousel(slideIndex);
+
+	function plusSlides(n) {
+		clearTimeout(t);
+		carousel(slideIndex += n);
+	}
+
+	function carousel(n) {
+		clearTimeout(t);
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		for(i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+
+		if (n >= x.length) {
+			slideIndex = 0;
+		} else if (n < 0) {
+			slideIndex = x.length -1;
+		} else {
+			slideIndex = n;
+		}
+		x[slideIndex].style.display = "block";
+		t = setTimeout(function() {carousel(slideIndex += 1);}, 10000);
+	}
+</script>
+
+

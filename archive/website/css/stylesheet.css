@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'World Conflict';
+    src: url('WorldConflict-Regular.eot');
+    src: url('WorldConflict-Regular.eot?#iefix') format('embedded-opentype'),
+        url('WorldConflict-Regular.woff2') format('woff2'),
+        url('WorldConflict-Regular.woff') format('woff'),
+        url('WorldConflict-Regular.ttf') format('truetype'),
+        url('WorldConflict-Regular.svg#WorldConflict-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sabon MT Std';
+    src: url('SabonMTStd-Regular.eot');
+    src: url('SabonMTStd-Regular.eot?#iefix') format('embedded-opentype'),
+        url('SabonMTStd-Regular.woff2') format('woff2'),
+        url('SabonMTStd-Regular.woff') format('woff'),
+        url('SabonMTStd-Regular.ttf') format('truetype'),
+        url('SabonMTStd-Regular.svg#SabonMTStd-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #f9f9f9;
+}
+
+.content{
+	font-family: 'Sabon MT Std';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.25em;
+    margin-left: 2em;
+    width: 80vw;
+}
+
+.header {
+  	/*padding: 10px 16px;*/
+	background: #333;
+  	color: #006994;  	
+  	font-family: 'World Conflict';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1rem; 
+    line-height: 1; 	
+}   
+
+.page_title_link{
+	background: #222;
+	color: #006994;
+	font-size: 2.2em;
+	outline: 0;
+	text-align: left;
+	text-decoration: none;	
+}
+
+.top_menu_item {
+	background: #111;
+	color: #006994;
+	font-size: 1.2em;
+	margin-right: 2em;
+	margin-bottom: 500px;
+	text-align: right;	
+}
+
+hr {
+	color: #fff;
+	width: 95vw;
+}
+
+.content {
+	padding: 16px;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 99%;
+}
+
+.sticky + .content {
+	padding-top: 102px;
+}
+
+
+
+
+
+.main_quote_image {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:1.5em;
+	margin-bottom:1.5em;
+	/*width:65%;*/
+	height: 69vh;
+	width: 80vw;
+}
+
+.bottom_menu {
+	text-align:right;
+	font-family: 'World Conflict';
+    font-weight: normal;
+    font-style: normal;
+    margin-top: 0em;
+    
+}
+
+.bottom_menu_item {
+	margin-right: 2em;
+	color: #006994;	
+	margin-top: 0em;
+}

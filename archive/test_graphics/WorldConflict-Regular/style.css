@@ -1,0 +1,13 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "WorldConflict-Regular";
+  src: url("./fonts/WorldConflict2.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/WorldConflict2.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/WorldConflict2.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/WorldConflict2.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/WorldConflict2.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/WorldConflict2.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/WorldConflict2.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}

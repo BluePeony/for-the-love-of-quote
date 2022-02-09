@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%=full_title(yield(:title)) %></title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= render 'layouts/shim' %>
+  </head>
+
+   <body>
+    <%= render 'layouts/header' %>
+    <div class="single-page single-quote-page">
+      <%= yield %> <!-- div class="single-quote-img" link_to image_tag /div -->
+      <div class="single-quote-meta">
+        
+        <div class="single-quote-meta-text">   
+          <br>
+          License: <%= link_to("CC-BY-SA", "https://creativecommons.org/licenses/")%>
+          <br>
+          That means you can download, edit and use this image even for commercial purposes as long as you credit me and license your new creation under exact the same terms.
+        </div>
+        <div class="single-quote-buttons">
+          <%= link_to "Download", "#{request.original_url}/download", class: "btn btn-lg btn-primary download-btn"%>
+
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="donate-btn">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="BL6WH5GGC76P8" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/DK/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" class="donate-img" />
+            <img alt="" border="0" src="https://www.paypal.com/en_DE/i/scr/pixel.gif" width="1" height="1" />
+          </form>
+        </div>        
+      </div>
+    </div>
+    <%= render 'layouts/footer' %>
+   </body>
+ </html>

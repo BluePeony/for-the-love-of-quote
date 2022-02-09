@@ -1,0 +1,7 @@
+<% provide(:title, "Gallery")%>
+
+<div class="gallery-content">
+	<% find_images.each do |img| %>
+			<%= link_to image_tag(img, alt: "quote_#{img}", class: "gallery-img"), "#{request.original_url}/#{img.delete_suffix('.jpg')}" %>
+	<% end %>
+</div>
