@@ -5,4 +5,5 @@ A user can add a new quote by running a script on the command line. Prior to sav
 A second script randomly chooses a yet unpublished quote from the database as well as a background picture from a selection of images. It then renders the quote to be placed in the centre of the picture and saves the result as a new image which is posted on the bot accounts on Twitter and Mastodon. The images are also displayed on the website and can be downloaded from there.<br>
 This self-hosted project is built and maintained using Ruby, Ruby on Rails and MySQL.
 
+Demo: https://www.youtube.com/watch?v=xBdVMdDTnB0<br>
 http://fortheloveofquote.com
